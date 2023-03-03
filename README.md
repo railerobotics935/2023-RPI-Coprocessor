@@ -10,15 +10,15 @@ How do you prepare an SD card for the RPI coprocessor:
 5) open ssh session to wpilibpi.local (e.g. with PuTTY application, log in with username "pi", password "raspberry")
 6) sudo date -s 'fri mar 3 12:07:23 CST 2023'  (update to local date! RPi date/time has to be correct, otherwise repository credentials may not work!)
 7) sudo apt-get install python3-venv
-  install depthai, see:
+      (install depthai, see:
       https://docs.luxonis.com/projects/api/en/latest/install/
       https://docs.luxonis.com/projects/api/en/latest/install/#raspberry-pi-os
-      https://docs.luxonis.com/projects/api/en/latest/install/#install-from-pypi
+      https://docs.luxonis.com/projects/api/en/latest/install/#install-from-pypi)
 8) sudo curl -fL https://docs.luxonis.com/install_dependencies.sh | bash
 9) python3 -m pip install depthai
-10) pip install robotpy-apriltag (was already installed, just to check)
-  install robotpy-apriltag, see:
-      https://pypi.org/project/robotpy-apriltag/
+10) pip install robotpy-apriltag
+      (install robotpy-apriltag, see:
+      https://pypi.org/project/robotpy-apriltag/ was already installed, just to check)
 11) open winscp session with wpilibpi.local
 12) create folder "models" under /home/pi
 13) copy neural network models to the models folder (see content in models folder in this github repository)
