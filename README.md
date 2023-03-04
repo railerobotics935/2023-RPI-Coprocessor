@@ -45,5 +45,6 @@ https://github.com/luxonis/depthai-ml-training/tree/master/colab-notebooks
 The image annotation was done using Roboflow. After creating a image set version in Roboflow export it in Yolo V6 format and move the images and annotation around into the folder structure required for the Colab notebook. See the documentation inside the Colab notebook for the exaxt structure. Easiest is to copy the images and annotations to the same Google Drive account as the one used for the Colab notebook so the drive can be mounted and images copied in the Colab scripts.
 
 After training the network with the Colab notebook, the weights need to be copied from the Colab notebook to a BLOB creation site provided by Luxonis for the DepthAI cameras. The link to this site is: http://tools.luxonis.com/
+Use the image size (320 or 416 pixels) as the block size on the tools site attributes.
 The results.zip file that gets downloaded from the Luxonis tools site contains the .blob file which needs to be transferred to the RPi home/pi/models folder and loaded in the RPi script. Check or modify the .blob filename to match the filename read in the script.
 
